@@ -66,8 +66,10 @@
 * Editando ainda mais nosso código, você pode digitar
 
     **nome = input("Qual seu nome? ")**
-**print("Olá,")**
-**print(nome)**
+    
+    **print("Olá,")**
+
+    **print(nome)**
 
 * O resultado no terminal deve ser
 
@@ -77,7 +79,7 @@
 
 * Estamos chegando mais perto do resultado que queremos
 
-* Você pode saber mais vendo a documentação do Python sobre [tipos de dados](https://docs.python.org/3/library/datatypes.html)
+* Você pode saber mais vendo a documentação do Python sobre [tipos de dados](https://docs.python.org/pt-br/3/library/datatypes.html)
 
 # Comentários
 
