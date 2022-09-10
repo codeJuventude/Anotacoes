@@ -86,8 +86,11 @@
 * Você pode adicionar comentários ao seu programa para poder ver o que seu programa está fazendo. Você pode editar seu código da seguinte forma:
 
     **# Ask the user for their name**
-**nome = input("Qual seu nome? ")**
-**print("Ola,")**
-**print(nome)**
+
+    **nome = input("Qual seu nome? ")**
+
+    **print("Ola,")**
+
+    **print(nome)**
 
 * Os comentários também podem servir como lista de tarefas para você.
