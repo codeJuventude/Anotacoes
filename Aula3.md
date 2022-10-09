@@ -1,6 +1,6 @@
 # Bem-vindos(as) à aula 3!!!
 
-![cat](https://user-images.githubusercontent.com/98218660/190912063-634fd535-7490-476c-9993-470b7c46699f.gif)
+![cat](https://imgur.com/a/dT3gAqY)
 
 ## Exceções (exceptions)
 
