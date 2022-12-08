@@ -67,3 +67,27 @@ async def join(self, ctx):
     # Caso contrário, conecte o bot no canal de voz do autor, conectando-o ao serviço de voz
     await ctx.author.voice.channel.connect()
 ```
+
+### Condicionais e repetições
+
+Seu projeto deve incluir estruturas condicionais e laços de repetição. Ele não deve ser puramente sequencial.
+
+## Documentação
+
+A documentação do seu projeto não precisa ser muito complexa, mas precisa ser completa, ou seja, toda funcionalidade deve estar explicada na documentação.
+
+### Descrição básica
+
+Sua documentação deve iniciar com uma breve descrição de o que é seu projeto e qual o objetivo dele.
+
+### Como usar 
+
+A próxima seção deve desmonstrar como usar seu programa. Que informações o usuário vai precisar fornecer? Quais argumentos de linha de comando o usuário irá fornecer, se houver?
+
+### Funções
+
+Cada função deverar ser explicitada na documentação e deve incluir nome, descrição da funcionalidade, quais argumentos de argumentos ela recebe e quais os tipos de dados desses argumentos, além dos valores de retorno de cada um
+
+## Breve revisão
+
+Segue abaixo uma breve revisão dos conceitos básicos vistos durante o curso:
