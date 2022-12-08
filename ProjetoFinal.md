@@ -88,6 +88,123 @@ A próxima seção deve desmonstrar como usar seu programa. Que informações o 
 
 Cada função deverar ser explicitada na documentação e deve incluir nome, descrição da funcionalidade, quais argumentos de argumentos ela recebe e quais os tipos de dados desses argumentos, além dos valores de retorno de cada um
 
-## Breve revisão
+## Markdown
 
-Segue abaixo uma breve revisão dos conceitos básicos vistos durante o curso:
+Markdown é uma linguagem de hypertexto muita usada para documentar programas. Apesar de ser um pouco diferente de escrever textos "puros", ela apresenta uma sintaxe simples.
+
+### Criando arquivos markdown
+Todo arquivo markdown deve terminar em .md para que ele funcione corretamente. O nome deste arquivo, por exemplo, é "ProjetoFinal.md"
+
+### Títulos
+
+Em markdown, títulos são escritos utilizando uma "#" sem as aspas seguido do título que você deseja, por exemplo: "# Título 1" quando o arquivo pronto é visualizado, se transforma em 
+# Título 1
+
+Você pode tornar seus títulos menores da seguinte forma:<br>
+"## Título 2" se torna
+## Título 2
+
+"### Título 3" se torna
+### Título 3
+
+e assim por diante.
+
+### Listas
+
+Você pode criar listas em markdown utilizando uma * no início da linha, da seguinte maneira:
+
+* Isso é um item de lista
+
+### Saiba mais!!!
+
+Caso queira (ou precise) saber mais sobre markdown, visite a [documentação](https://docs.pipz.com/central-de-ajuda/learning-center/guia-basico-de-markdown#open)
+
+# Revisão!!
+
+## Variáveis
+Variáveis são como caixinhas que guardam algum tipo de informação e tornam fácil acessar essa informação em qualquer parte do seu programa, pois com elas o seu computador "lembra" onde essa informação está guardada. Toda variável deve ter um nome que descreva qual informação está guardada. Por exemplo, uma variável que guarda um dia de número 21 pode ser chamada de `dia` e podemos guardar o valor 21 dentro dela da seguinte forma:
+```
+dia = 21
+```
+A expressão acima é lida como "a variável dia recebe o valor 21".
+
+## Listas
+
+Em Python, listas são uma forma prática de guardarmos mais de um valor, preferencialmente relacionados entre si, em uma única variável, colocando todos os valores dentro de colchetes e separados por vírgula, da seguinte maneira:
+
+```
+carro = ["Toyota", 2016]
+```
+
+## Dicionários
+
+No exemplo anterior, temos o que podemos supor ser uma variável guardando informações sobre um carro (marca e ano, respectivamente). Nossa suposição estaria correta, mas isso nem sempre será verdade. Existem muitos casos em que não é tão claro supor o que é cada informação. Por esse e outros motivos, dicionários podem ser alternativas atraentes às listas.<br><br>
+Dicionários em Python associam certas chaves aos seus respectivos valores, assim como dicionários de português associam palavras aos seus significados. Ao invés de colchetes, usamos chaves para declararmos dicionários e, assim como nas listas, utilizamos vírgulas para separar nossos pares chave-valor, da seguinte forma:
+
+```
+carro = {"marca": "Toyota, "ano": 2016}
+``` 
+## Condicionais
+Existem vários momentos em nossas vidas de programadores que nos deparamos com situações em que queremos que certa funcionalidade do nosso código só seja executada se alguma coisa acontecer ou deixar de acontecer, ou seja, se alguma condição for satisfeita.<br>
+
+Em Python, estas condições são declaradas pela palavra "if", que significa "se" em inglês, da seguinte forma:
+
+```
+x = 21
+
+if x > 20:
+    print("x é maior que 20")
+```
+Nesse caso, x é 21 e, portanto, maior que 20. Então, o bloco de código dentro da condicional é executado, mas e se x não fosse maior que 20? Podemos usar a palavra "else", que significa "senão em inglês", da seguinte forma:
+
+```
+x = 19
+
+if x > 20:
+    print("x é maior que 20")
+else:
+    print("x é menor que 20")
+```
+
+Mas e se, em último caso, x seja EXATAMENTE 20? No código acima, o resultado seria "x é menor que 20", o que obviamente não é verdadeiro. Então podemos usar outro artifício, que é a expressão "elif" que é uma redução das palavras "else if", que em inglês significa "senão, se", da seguinte forma:
+
+```
+x = 20
+
+if x > 20:
+    print("x é maior que 20")
+
+else if x < 20:
+    print("x é menor que 20")
+
+else:
+    print("x é 20")
+```
+
+## Repetições
+
+Outras várias vezes nós precisamos que uma mesma funcionalidade se repita várias vezes. Nos poderíamos escrever o mesmo código várias vezes, mas isso não é bom design. Por isso, usamos o que chamados de estruturas de repetição.
+
+### While
+
+Uma estrutura de repetição se chama while. Ela se assemelha a uma condicional, mas se diferencia pelo fato de que ao invés de o código executar uma única vez que a condição especificada seja `verdadeira`, ele será executado várias vezes até que a condição seja `falsa`, da seguinte maneira:
+
+```
+x = 0
+
+while x < 10:
+    print(x)
+    x += 1
+```
+
+Aqui, x começa com um valor 0, o que não satizfaz a condição, o que significa que o código será executado, resultando na impressão do valor de x e no incremento de x por 1. Isso se repete até que x seja igual a 10
+
+### For
+
+A estrutura for também repete um código até que uma condição deixe de ser satisfeita, mas permite um controle mas fino das repetições, por exemplo, digamos que queremos repetir um código EXATAMENTE cingo vezez, faremos o seguinte:
+
+```
+for i in range(5):
+    print(i)
+```
+Declaramos uma variável i dentro da estrutura for, que automaticamente terá o valor 0 atribuido a ela, a cada vez que o código é executado, a variável tem seu valor incrementado por 1 até que i = 5, o que é determinado por range(5). Range, em inglês, significa distância.
